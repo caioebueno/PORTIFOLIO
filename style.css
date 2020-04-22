@@ -10,6 +10,8 @@ html, body{
   background-color: #202020;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
 #secondDiv{
@@ -179,6 +181,49 @@ html, body{
 .container{
   max-width: 2000px !important;
 }
+#fixedImg{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url("img/accessablewebpage.png");
+  position: fixed;
+}
+#transparentDiv{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+#projectDiv{
+  background-color: #F9F9F9;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+#typeRow{
+  padding-bottom: 12px;
+}
+#titleProjectRow{
+  padding-bottom: 100px;
+}
+.typeText{
+  font-family: "Apercu mono";
+  font-size: 17px;
+  color: #757575;
+}
+#projectTitile{
+  font-weight: bold;
+  font-size: 40px;
+}
+#challenge{
+  font-size: 25px;
+  font-weight: bold;
+
+}
 @media screen and (max-width: 480px) {
   #title{
     font-size: 40px;
@@ -227,4 +272,38 @@ html, body{
   #title{
     font-size: 60px;
   }
+  #projectDiv{
+    background-color: #F9F9F9;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #transparentDiv{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .typeText{
+    font-family: "Apercu mono";
+    font-size: 15px;
+    color: #757575;
+  }
+  #titleProjectRow{
+    padding-bottom: 60px;
+  }
+  #challenge{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+  }
+  .lastRow{
+    padding-bottom: 40px;
+  }
+
 }

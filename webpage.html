@@ -2,16 +2,134 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Caio Bueno Portifolio</title>
+    <title>Webpage</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="fluid-gallery.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    Accesable webpage
+    <div id="fixedImg">
+
+    </div>
+    <div id="transparentDiv">
+      <nav class="container m0">
+
+        <div class="row">
+
+          <div class="col-2">
+            <h1>Caio</h1>
+          </div>
+
+          <div class="col-7 d-flex justify-content-center">
+            <div class="row">
+
+              <div class="col-3 d-flex justify-content-center align-items-center navIten">
+                <a href="index.html" class="navItenA">Home</a>
+              </div>
+
+              <div class="col-3 d-flex justify-content-center align-items-center navIten">
+                <a onclick="smoothScroll(document.getElementById('forthDiv'))" class="navItenA">Works</a>
+              </div>
+
+              <div class="col-3 d-flex justify-content-center align-items-center navIten">
+                <a onclick="smoothScroll(document.getElementById('thirdDiv'))" class="navItenA">Skills</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-3 d-flex justify-content-center">
+            <button onclick="smoothScroll(document.getElementById('fifthDiv'))" type="button" id="contactBtn" name="button">Contact</button>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+    <div id="projectDiv">
+      <div class="container">
+
+        <div class="row" id="typeRow">
+          <div class="col-lg-4 col-6">
+            <h5 class="typeText">Type of project: UX/UI</h5>
+          </div>
+          <div class="col-lg-4 col-6">
+            <h5 class="typeText">Role: UX/UI Designer</h5>
+          </div>
+        </div>
+
+        <div class="row" id="titleProjectRow">
+          <div class="col-12">
+            <h2 id="projectTitile">Switch Off is a startup that created a smart device that disconnects electronic devices when they’re not in use, helping people save up to 15% on their electric bill.</h2>
+          </div>
+        </div>
+
+        <div class="row lastRow">
+          <div class="col-lg-4 col-12">
+            <h3 id="challenge">The challenge</h3>
+          </div>
+          <div class="col-lg-8 col-12">
+            <p class="paragraph">The Switch Off team launched a landing page as a first prototype to test the value proposition of their product, after a couple of months they realized that the site was not doing well, the product wasn’t clear enough for the users and the presales were not going as expected.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+  <div class="col-md-12">
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="images/bridge.jpg">
+                    <img src="images/bridge.jpg" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/park.jpg">
+                    <img src="images/park.jpg" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/tunnel.jpg">
+                    <img src="images/tunnel.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="images/traffic.jpg">
+                    <img src="images/traffic.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-12">
+            <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="images/coast.jpg">
+                    <img src="images/coast.jpg" alt="Coast">
+                </a>
+            </div>
+            <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="images/rails.jpg">
+                    <img src="images/rails.jpg" alt="Rails">
+                </a>
+            </div>
+            </div>
+
+        </div>
+
+</div>
+    </div>
+
+  </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
