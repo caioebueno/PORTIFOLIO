@@ -20,3 +20,8 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+window.addEventListener("scroll", function(){
+  document.getElementById("audio").play();
+
+})
