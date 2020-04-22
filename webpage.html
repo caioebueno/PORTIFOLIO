@@ -17,39 +17,48 @@
     <div id="fixedImg">
 
     </div>
-    <div id="transparentDiv">
-      <nav class="container m0">
+    <nav class="navbarNav">
 
-        <div class="row">
+      <div class="row">
 
-          <div class="col-2">
-            <h1>Caio</h1>
-          </div>
-
-          <div class="col-7 d-flex justify-content-center">
-            <div class="row">
-
-              <div class="col-3 d-flex justify-content-center align-items-center navIten">
-                <a href="index.html" class="navItenA">Home</a>
-              </div>
-
-              <div class="col-3 d-flex justify-content-center align-items-center navIten">
-                <a onclick="smoothScroll(document.getElementById('forthDiv'))" class="navItenA">Works</a>
-              </div>
-
-              <div class="col-3 d-flex justify-content-center align-items-center navIten">
-                <a onclick="smoothScroll(document.getElementById('thirdDiv'))" class="navItenA">Skills</a>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-3 d-flex justify-content-center">
-            <button onclick="smoothScroll(document.getElementById('fifthDiv'))" type="button" id="contactBtn" name="button">Contact</button>
-          </div>
-
+        <div class="col-2">
+          <h1>Caio</h1>
         </div>
-      </nav>
+
+        <div class="col-7 d-flex justify-content-center">
+          <div class="row justify-content-center">
+
+            <div class="col-3 d-flex justify-content-center align-items-center navIten">
+              <a href="index.html" class="navItenA">Home</a>
+            </div>
+
+            <div class="col-3 d-flex justify-content-center align-items-center navIten">
+              <a onclick="smoothScroll(document.getElementById('forthDiv'))" class="navItenA">Works</a>
+            </div>
+
+            <div class="col-3 d-flex justify-content-center align-items-center navIten">
+              <a onclick="smoothScroll(document.getElementById('thirdDiv'))" class="navItenA">Skills</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <button onclick="smoothScroll(document.getElementById('fifthDiv'))" class="contactProject" type="button" id="contactBtn" name="button">Contact</button>
+        </div>
+      </div>
+    </nav>
+    <div id="transparentDiv">
+      <div class="row justify-content-center">
+        <div class="col-3 d-flex justify-content-center">
+          <img src="https://uploads-ssl.webflow.com/5d0413aac019bc3e0414eaf4/5d5241542d295f69469003ae_mouse-icon.svg" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-3 d-flex justify-content-center">
+          <h4 id="scrollText">Scrool Down</h4>
+        </div>
+      </div>
     </div>
     <div id="projectDiv">
       <div class="container">
@@ -105,7 +114,7 @@
                     <img src="images/traffic.jpg" alt="Traffic">
                 </a>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-lg-4">
             <div class="col-sm-12 col-lg-12 padding">
                 <a class="lightbox" href="images/coast.jpg">
                     <img src="images/coast.jpg" alt="Coast">
@@ -123,6 +132,29 @@
 </div>
     </div>
 
+  </div>
+</div>
+  <div id="fifthDiv">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="row">
+            <h1 id="sayHello">Say hello</h1>
+          </div>
+          <div class="row">
+            <h4>Or just save my email for the future.</h4>
+          </div>
+          <div class="row">
+            <a href="#"><button id="emailBtn" type="button" name="button">caioebueno@gmail.com <img src="https://uploads-ssl.webflow.com/5d0413aac019bc3e0414eaf4/5d043d93e1a868ce419d3963_grey-arrow-link.svg" style="margin-left:5px;" width="15" alt=""></button></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 d-flex align-items-center">
+          <h3 class="paragraph" id="contactParagraph">If you want to know a little more about me follow me for more thoughts and content that I’ll be sharing through my <a href="https://github.com/caioebueno" style="color:#ff5252">GitHub</a> and <a href="https://www.linkedin.com/in/caio-bueno-55b39517b/" style="color:#ff5252">LinkedIn.</a<h3>
+        </div>
+      </div>
+    </div>
   </div>
 
 
