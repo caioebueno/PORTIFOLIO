@@ -21,7 +21,7 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-window.addEventListener("scroll", function(){
-  document.getElementById("audio").play();
-
-})
+// window.addEventListener("scroll", function(){
+//   document.getElementById("audio").play();
+//
+// })
