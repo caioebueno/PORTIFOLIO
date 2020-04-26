@@ -25,3 +25,10 @@ window.smoothScroll = function(target) {
 //   document.getElementById("audio").play();
 //
 // })
+
+function sendEmail(email) {
+  event.preventDefault();
+  console.log(email);
+
+  document.location = "mailto:"+email+"?subject= &body= ";
+}
