@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Webpage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="fluid-gallery.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="fixedImg" style="background-image: url('img/carretosonline/platform.png'); background-size: cover;">
+
+  </div>
+
+  <div id="transparentDiv">
+
+    <div class="scroll-downsB">
+      <div class="mouseyB">
+        <div class="scrollerB"></div>
+      </div>
+    </div>
+  </div>
+  <div id="projectDiv">
+    <div class="container">
+
+      <div class="row" id="typeRow">
+        <div class="col-lg-4 col-6">
+          <h5 class="typeText">Type of project: Marketplace</h5>
+        </div>
+        <div class="col-lg-4 col-6">
+          <h5 class="typeText">Role: Main developer</h5>
+        </div>
+      </div>
+
+      <div class="row" id="titleProjectRow">
+        <div class="col-12">
+          <h2 id="projectTitile">Carretos Online is a logistic marketplace where the user can receive quotes for freight or moving services.</h2>
+        </div>
+      </div>
+
+      <div class="row lastRow">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">The challenge</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">This product consisted of 2 main implementations. First a dynamic form that was places on Carretos Online's landing page, so the users could ask for specific quotes. Second a list that the user could see all quotes that the truck drivers send then and the possibility to do the checkout proccess on the platform.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">1: The form</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">On this part we choose to use a service described on this portifolio the <a href="upscaleforms.html">Upscale Forms</a>. We created inside the platform a 2 step form with many layout rules that fitted perfectly our client usecase and the inclusion of address fields integrated with google maps, also we created a custom function that integrated the submit of the from with his CRM system called Zoho CRM.</p>
+        </div>
+      </div>
+      <div class="row lastRow">
+        <div class="col-md-12">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/carretosonline/form.png">
+                  <img src="img/carretosonline/form.png" alt="Coast">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">2: The quotes list</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">We created a platform using Next.Js hosted on Vercel for the front end, it connected with the server to display a list of quotes available for the user also giving the option to perform the checkout proccess. For card processing we decided to use a Brazilian solution called Mergado Pago since the client was already using this tool on his previus workflow.
+          </p>
+        </div>
+      </div>
+      <div class="row lastRow">
+        <div class="col-md-12">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/carretosonline/platform.png">
+                  <img src="img/carretosonline/platform.png" alt="Coast">
+                </a>
+              </div>
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/carretosonline/platform2.png">
+                  <img src="img/carretosonline/platform2.png" alt="Coast">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">3: The server</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">For the server we pre generate files using a CLI mentioned in this protifolio <a href="zcli.html">ZCli</a> and created a basic express route arquitecture to meet all the usecases needed. As far as data managament go almost 100% of it was stored on the client's CRM systems, however some of it was stored in a MySql database and it was consulted using Prisma ORM. Since he had the types generated by ZCli and Prisma we opted to use TypeScript throughout the whole project. The server was hosted on DigitalOcean alogn with database and also a file storage for images.</p>
+        </div>
+      </div>
+      
+     
+    </div>
+    
+  </div>
+  <div id="fifthDiv">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="row">
+            <h1 id="sayHello">Say hello</h1>
+          </div>
+          <div class="row">
+            <h4>Or just save my email for the future.</h4>
+          </div>
+          <div class="row">
+            <a href="#"><button id="emailBtn" onClick="sendEmail(this.name)" type="button"
+                name="button">caioebueno@gmail.com <img
+                  src="https://uploads-ssl.webflow.com/5d0413aac019bc3e0414eaf4/5d043d93e1a868ce419d3963_grey-arrow-link.svg"
+                  style="margin-left:5px;" width="15" alt=""></button></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 d-flex align-items-center">
+          <h3 class="paragraph" id="contactParagraph">If you want to know a little more about me follow me for more
+            thoughts and content that I’ll be sharing through my <a href="https://github.com/caioebueno"
+              style="color:#32A6A6">GitHub</a> and <a href="https://www.linkedin.com/in/caio-bueno-55b39517b/"
+              style="color:#32A6A6">LinkedIn.</a<h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="index.js" type="text/javascript">
+
+  </script>
+</body>
+
+</html>
