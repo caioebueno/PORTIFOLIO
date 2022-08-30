@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Webpage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link rel="stylesheet" href="fluid-gallery.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="fixedImg" style="background-image: url('img/upscaleforms/builder.png'); background-size: cover;">
+
+  </div>
+
+  <div id="transparentDiv">
+
+    <div class="scroll-downsB">
+      <div class="mouseyB">
+        <div class="scrollerB"></div>
+      </div>
+    </div>
+  </div>
+  <div id="projectDiv">
+    <div class="container">
+
+      <div class="row" id="typeRow">
+        <div class="col-lg-4 col-6">
+          <h5 class="typeText">Type of project: SaaS</h5>
+        </div>
+        <div class="col-lg-4 col-6">
+          <h5 class="typeText">Role: Main developer</h5>
+        </div>
+      </div>
+
+      <div class="row" id="titleProjectRow">
+        <div class="col-12">
+          <h2 id="projectTitile">Upscale Forms is a SaaS product dedicated to create highly customizable forms with a
+            capacity to intagrate with other applications.</h2>
+        </div>
+      </div>
+
+      <div class="row lastRow">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">The challenge</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">We had 4 main goals on this project. Have a interface where the user could place and
+            crontrol fields. Have the option to style the form as the user chooses. Have the possibility to integrate
+            with any outside application or systems. Have an easy way to display the form in the web or mobile.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">1: The builder</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">For the whole client we choose to use Next.Js with typescript to add the benefits of type
+            safety. The wole interface consists of many screens, however the most complex one is the screen that allows
+            users to place fields as they please, manage fields properties and create layout rules. We created a grid
+            systems composed by rows and columns, with that fields could be placed almost anywhere it needed to be
+            placed. To make the experince more dynamic and symple we decided to implement a drag and drop systems, at
+            first we used an amazing npm package called react-beautiful-dnd but as our demand grew we had to develop our
+            drag and drop logic from scratch</p>
+        </div>
+      </div>
+      <div class="row lastRow">
+        <div class="col-md-12">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/drag.png">
+                  <img src="img/upscaleforms/drag.png" alt="Coast">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">2: The styler</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">To achive a high customization capability we decided to implement a space for the user to
+            type their own css. We created the components page, a place where the user could create css styles for
+            certain field type, once the component was created it could be used multiple times to style multiple fields.
+            Also we design a marketplace to share you custom design with other users. To make the css typing a similar
+            experince as typing it on your own IDE we used Monaco.</p>
+        </div>
+      </div>
+      <div class="row lastRow">
+        <div class="col-md-12">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/style.png">
+                  <img src="img/upscaleforms/style.png" alt="Coast">
+                </a>
+              </div>
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/style2.png">
+                  <img src="img/upscaleforms/style2.png" alt="Coast">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">3: The Commander</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">The interactivity module is separated in 2 main sections. The actions section with are
+            resposible for inetractions while the user is filling the form, the user can select triggers and create
+            custom functions to perform any action it might need like display messagens or fill certain fields. The
+            other section is called Workflow with is responsible for inetgration tasks after the user has submitted the
+            form. We have a flow chart where it can be created in the choosen order tasks that will be executed. This
+            tasks could be anything from custom functions to easy to setup Oauth integrations to other applications. The
+            custom functions used in both sections are TypeScript functions written inside of the platform, that hava a
+            type safe system with every field on the form created on the builder and also a log an error list to check
+            any outcome or be aware of malfunctions in your code.</p>
+        </div>
+      </div>
+      <div class="row lastRow">
+        <div class="col-md-12">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/command.png">
+                  <img src="img/upscaleforms/command.png" alt="Coast">
+                </a>
+              </div>
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/command1.png">
+                  <img src="img/upscaleforms/command1.png" alt="Coast">
+                </a>
+              </div>
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/command2.png">
+                  <img src="img/upscaleforms/command2.png" alt="Coast">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3 id="challenge">4: Share it</h3>
+        </div>
+        <div class="col-lg-8 col-12">
+          <p class="paragraph">At the currently moment we have 3 ways to share a created form. The embed options is an
+            Iframe that can be placed in any website. The React.Js module that allows for easy integration in any react
+            application developed, it can be found in the NPM regestry. Also we have the options to display your form on
+            a mobile app with out React-Native package that is also available in teh NPM regestry. In the future we plan
+            to create packages for other frameworks like Vue.Js and a SDK for vanilla js.</p>
+        </div>
+      </div>
+      <div class="row lastRow">
+        <div class="col-md-12">
+          <div class="tz-gallery">
+            <div class="row">
+              <div class="col-sm-12 col-lg-12 padding">
+                <a class="lightbox" href="img/upscaleforms/share.png">
+                  <img src="img/upscaleforms/share.png" alt="Coast">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    
+  </div>
+  <div id="fifthDiv">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="row">
+            <h1 id="sayHello">Say hello</h1>
+          </div>
+          <div class="row">
+            <h4>Or just save my email for the future.</h4>
+          </div>
+          <div class="row">
+            <a href="#"><button id="emailBtn" onClick="sendEmail(this.name)" type="button"
+                name="button">caioebueno@gmail.com <img
+                  src="https://uploads-ssl.webflow.com/5d0413aac019bc3e0414eaf4/5d043d93e1a868ce419d3963_grey-arrow-link.svg"
+                  style="margin-left:5px;" width="15" alt=""></button></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 d-flex align-items-center">
+          <h3 class="paragraph" id="contactParagraph">If you want to know a little more about me follow me for more
+            thoughts and content that I’ll be sharing through my <a href="https://github.com/caioebueno"
+              style="color:#32A6A6">GitHub</a> and <a href="https://www.linkedin.com/in/caio-bueno-55b39517b/"
+              style="color:#32A6A6">LinkedIn.</a<h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.tz-gallery');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="index.js" type="text/javascript">
+
+  </script>
+</body>
+
+</html>
